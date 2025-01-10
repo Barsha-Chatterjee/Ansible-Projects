@@ -11,7 +11,7 @@
 
     - name: Copy a file with permissions
       ansible.builtin.copy:
-        src: barsha_file
+        src: My_file
         dest: /home/ubuntu/users/
         owner: root
         group: root
