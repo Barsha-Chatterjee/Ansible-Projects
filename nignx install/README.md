@@ -1,1 +1,9 @@
-Write a ansible-playbook to install and start nginx in the targeted servers
+**What This Playbook Does**
+
+***_*Install Nginx:**___**
+
+Installs the nginx package on the target hosts using the apt module.
+
+**_**Start Nginx Service:_****
+
+Ensures that the Nginx service is started and running on the target hosts.
