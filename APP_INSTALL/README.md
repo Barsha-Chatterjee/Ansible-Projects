@@ -8,7 +8,7 @@ This Ansible playbook is designed to automate the configuration of web servers a
 
 1.Installs Apache HTTP Server (HTTPD) on target web servers.
 
-2.Copies a file (barsha_file) to a specified directory (/home/ubuntu/users/) on the web servers with specific ownership and permissions.
+2.Copies a file (My_file) to a specified directory (/home/ubuntu/users/) on the web servers with specific ownership and permissions.
 
 **_Database Servers:_**
 
