@@ -1,0 +1,31 @@
+---
+
+- hosts: web_servers
+  become: true
+  tasks:
+    - name: Install Apache HTTPD
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Copy a file with permissions
+      ansible.builtin.copy:
+        src: barsha_file
+        dest: /home/ubuntu/users/
+        owner: root
+        group: root
+        mode: '0744'
+
+- hosts: db_servers
+  become: true
+  tasks:
+    - name: Install PostgreSQL
+      ansible.builtin.apt:
+        name: postgresql
+        state: present
+
+    - name: Start PostgreSQL
+      ansible.builtin.service:
+        name: postgresql
+        state: started
