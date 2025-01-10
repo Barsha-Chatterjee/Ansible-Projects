@@ -2,7 +2,7 @@
 
 **_Overview:_**
 
-This Ansible playbook is designed to automate the configuration of both web servers and database servers. It utilizes Ansible Built-in Modules to perform the tasks efficiently. Below is a detailed description of the operations performed.
+This Ansible playbook is designed to automate the configuration of both web servers and database servers. It utilizes **Ansible Built-in Modules** to perform the tasks efficiently. Below is a detailed description of the operations performed.
 
 **_Web Servers:_**
 
