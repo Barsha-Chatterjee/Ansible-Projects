@@ -1,0 +1,5 @@
+To organize the given playbook into Ansible roles, you will need to create two roles: one for web_servers and another for db_servers.
+
+$ansible-galaxy role init web_server
+
+$ansible_galaxy role init db_server
