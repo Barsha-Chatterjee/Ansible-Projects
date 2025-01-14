@@ -1,5 +1,9 @@
 1. Role: web_server 
-  path: /web_server/tasks/main.yml
+
+/webserver/files/barsha_file
+Place the barsha_file content in this directory.
+  
+path: /web_server/tasks/main.yml
 
 ---
 - name: Install Apache HTTPD
@@ -15,9 +19,6 @@
     owner: root
     group: root
     mode: '0744'
-
-/webserver/files/barsha_file
-Place the barsha_file content in this directory.
 
 
 2. Role: db_server
