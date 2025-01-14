@@ -1,0 +1,38 @@
+1. Role: web_server
+   
+  path: /web_server/tasks/main.yml
+
+---
+- name: Install Apache HTTPD
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Copy a file with permissions
+  ansible.builtin.copy:
+    src: files/barsha_file
+    dest: /home/ubuntu/users/
+    owner: root
+    group: root
+    mode: '0744'
+
+/webserver/files/barsha_file
+
+Place the barsha_file content in this directory.
+
+
+2. Role: db_server
+
+  path: /db_server/tasks/main.yml
+
+---
+- name: Install PostgreSQL
+  ansible.builtin.apt:
+    name: postgresql
+    state: present
+
+- name: Start PostgreSQL
+  ansible.builtin.service:
+    name: postgresql
+    state: started
