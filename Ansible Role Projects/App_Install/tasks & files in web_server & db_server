@@ -1,6 +1,6 @@
 1. Role: web_server 
 
-/webserver/files/barsha_file
+path: /webserver/files/barsha_file
 Place the barsha_file content in this directory.
   
 path: /web_server/tasks/main.yml
