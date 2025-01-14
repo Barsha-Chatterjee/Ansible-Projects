@@ -4,13 +4,13 @@ This project uses Ansible roles to configure and deploy a web server (Apache HTT
 
 **Roles Overview**
 
-_1. Web Server (webserver)_:
+**_1. Web Server (webserver)_:**
 
 Installs Apache HTTPD.
 
 Copies barsha_file to /home/ubuntu/users/.
 
-_2. Database Server (dbserver)_:
+**_2. Database Server (dbserver)_:**
 
 Installs PostgreSQL.
 
