@@ -1,0 +1,11 @@
+---
+
+- hosts: web_servers
+  become: true
+  roles:
+    - web_server
+
+- hosts: db_servers
+  become: true
+  roles:
+    - db_server
