@@ -15,3 +15,15 @@ Copies barsha_file to /home/ubuntu/users/.
 Installs PostgreSQL.
 
 Starts the PostgreSQL service.
+
+playbook.yml          # Main playbook to execute roles
+roles/
+├── webserver/
+│   ├── tasks/
+│   │   └── main.yml   # Web server tasks
+│   ├── files/
+│   │   └── barsha_file # File to copy to the web server
+├── dbserver/
+│   ├── tasks/
+│   │   └── main.yml   # Database server tasks
+
