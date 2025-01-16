@@ -8,3 +8,5 @@ Ansible is an open-source configuration management tool widely used in organizat
 2. _Ansible Playbook Docs:_ https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
 
 3. _Ansible built-in module:_ https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
+
+4. _Ansible Collection module (third-party):_ https://docs.ansible.com/ansible/latest/collections/index.html# 
