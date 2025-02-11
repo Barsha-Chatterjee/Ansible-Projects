@@ -9,6 +9,6 @@ Ansible is an open-source configuration management tool widely used in organizat
 
 3. _Ansible built-in module:_ https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
 
-4. _Ansible Collection module (third-party):_ https://docs.ansible.com/ansible/latest/collections/index.html#
+4. _Ansible Collection module (Talk to third-party tool using API calls):_ https://docs.ansible.com/ansible/latest/collections/index.html#
 
 5. _AWS Collection in Ansible-Galaxy:_ https://galaxy.ansible.com/ui/repo/published/amazon/aws/
