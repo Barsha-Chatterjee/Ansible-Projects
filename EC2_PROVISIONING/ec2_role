@@ -1,4 +1,4 @@
-# tasks file for ec2
+# tasks file for ec2_role
 
 - name: create EC2 instance with Public IP
   amazon.aws.ec2_instance:
