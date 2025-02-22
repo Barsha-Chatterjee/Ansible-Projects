@@ -1,0 +1,21 @@
+# Install AWD collection in ansible before calling API's
+
+$ ansible-galaxy collection install amazon.aws
+
+# Install python module -BOTO3, which talks to AWS API (below cmd changes as per the OS image of ansible server)
+
+$ sudo apt install python3-boto3
+
+# Initialize ansible role
+
+$ ansible-galaxy role init ec2_role
+
+# Set-Up a Vault with password (for sensitive data)
+
+$ openssl rand -base64 2048 > vault.pass
+
+# Add your AWS credentials to the vault (add the sensitive data within the below file like AWS ACCESS KEY, AWS SECRET KEY)
+
+$ ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
+
+
