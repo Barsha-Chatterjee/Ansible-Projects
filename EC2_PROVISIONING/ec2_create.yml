@@ -4,3 +4,5 @@
   connection: local
   roles:
     - ec2_role
+
+# here host and connection is local because script should be run in the same machine i.e., ansible server
