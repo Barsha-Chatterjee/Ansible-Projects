@@ -1,8 +1,11 @@
 ---
 # tasks file for ec2_role
 
-- name: "{{ enter_instance_name }}"
+- name: Provision EC2 instance
   amazon.aws.ec2_instance:
+    name: "{{ enter_instance_name }}"
+    key_name: "{{ enter_keypair }}"
+    vpc_subnet_id: "{{ enter_vpc }}"
     instance_type: "{{ enter_instance_type }}"
     security_group: "{{ enter_SG }}"
     count: "{{enter_number_of_instances_to_provision}}"
