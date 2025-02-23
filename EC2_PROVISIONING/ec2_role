@@ -1,3 +1,4 @@
+---
 # tasks file for ec2_role
 
 - name: "{{ enter_instance_name }}"
