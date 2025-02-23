@@ -1,4 +1,4 @@
-# Install AWD collection in ansible before calling API's
+# Install AWS collection in ansible before calling API's
 
 $ ansible-galaxy collection install amazon.aws
 
