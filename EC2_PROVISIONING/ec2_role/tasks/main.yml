@@ -1,0 +1,14 @@
+---
+# tasks file for ec2_role
+
+- name: "{{ enter_instance_name }}"
+  amazon.aws.ec2_instance:
+    instance_type: "{{ enter_instance_type }}"
+    security_group: "{{ enter_SG }}"
+    count: "{{enter_number_of_instances_to_provision}}"
+    region: "{{ enter_region }}"
+    aws_access_key: "{{ aws_access_key }}"  # From vault as defined
+    aws_secret_key: "{{ aws_secret_key }}"  # From vault as defined
+    network:
+      assign_public_ip: true
+    image_id: "{{ enter_ami_id }}"
