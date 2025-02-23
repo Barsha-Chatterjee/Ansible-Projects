@@ -1,0 +1,11 @@
+---
+# vars file for ec2
+
+enter_instance_name: demo-instance
+enter_instance_type: t2.micro
+enter_SG: default
+enter_number_of_instances_to_provision: 1
+enter_keypair: ssh-key-prod
+enter_vpc: subnet-013744e41e8088axx
+enter_region: us-east-1
+enter_ami_id: ami-04b70fa74e45c3917
