@@ -1,6 +1,6 @@
 This playbook helps to provision EC2 instance using ansible.
 
-**Ansible Vault:**Its used to secure sensitive data like passwords, API tokens, encrypt a file etc., within the ansible playbooks/roles.
+**Ansible Vault:** Its used to secure sensitive data like passwords, API tokens, encrypt a file etc., within the ansible playbooks/roles.
 
 1. Create a password for vault
    
