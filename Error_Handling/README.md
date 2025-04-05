@@ -12,6 +12,7 @@ If a task fails on any specific host, Ansible will not execute the subsequent ta
 
 However, if the task succeeds on other hosts, the playbook will continue execution for those successful hosts.
 
+
 **Example Scenario:**
 
 If Task 1 (checking for OpenSSH and OpenSSL) fails on Node 1, then Tasks 2 and 3 will be skipped for Node 1.
@@ -20,10 +21,14 @@ If the same task succeeds on Node 2 and Node 3, the playbook will continue and e
 
 _But, when error handling is used, even if a task fails at any point on a server, the next task will still continue to execute on that same server._
 
-**Syntax: ** 
-1. ignore all types of errors
+**Syntax:** 
+1. _ignore all types of errors_
+
           ignore_errors: yes
-2. ignore only particular type of errors
+2. _ignore only particular type of errors_
+
           failed_when:
+
                  - <condition 1>
+
                  - <condition 2>
