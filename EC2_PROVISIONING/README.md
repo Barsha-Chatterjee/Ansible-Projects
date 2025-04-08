@@ -2,16 +2,30 @@ This playbook helps to provision EC2 instance using ansible.
 
 **Ansible Vault:** Its used to secure sensitive data like passwords, API tokens, encrypt a file etc., within the ansible playbooks/roles.
 
-1. _Create a password for vault_
+1. _Create a random password for vault_ 
    
            openssl rand -base64 2048 > <vault_file_name.pass>
+
   
-3. _Add your AWS credentials using the below vault command_
+2. _Create a file with sensitive data and encrypt it_
    
            ansible-vault create path/to/the/credentials.yml --vault-password-file <vault_file_name.pass>
 
-Eg:
+   (Note : If you don't want to create any random password then while encrypting file, don't use --vault-password file syntax)
 
-openssl rand -base64 2048 > vault.pass
+****ANSIBLE VAULT OPTIONS:****
 
-ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
+**create randow password** **-**  openssl rand -base64 2048 > vault.pass
+
+**create new vault encrypted file** **-** ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
+
+**Edit the file** **-** ansible-vault edit group_vars/all/pass.yml --vault-password-file vault.pass
+
+**Decrypt the file** **-** ansible-vault decrypt group_vars/all/pass.yml --vault-password-file vault.pass
+
+**View the Encrypted file** **-** ansible-vault view group_vars/all/pass.yml --vault-password-file vault.pass
+
+**encrypt already existing file** **-** ansible-vault encrypt group_vars/all/pass.yml
+
+
+
