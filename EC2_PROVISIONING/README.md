@@ -27,5 +27,8 @@ This playbook helps to provision EC2 instance using ansible.
 
 **encrypt already existing file** **-** ansible-vault encrypt group_vars/all/pass.yml
 
+**change existing vault the password** **-** ansible-vault rekey vault.pass  (You’ll be prompted for the current password and then to enter a new password twice)
+
+
 
 
