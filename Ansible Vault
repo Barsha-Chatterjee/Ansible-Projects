@@ -3,9 +3,11 @@ Ansible Vault: Its used to secure sensitive data like passwords, API tokens, enc
 Create a random password for vault
 
     openssl rand -base64 2048 > <vault_file_name.pass>
+
 Create a file with sensitive data and encrypt it
 
     ansible-vault create path/to/the/credentials.yml --vault-password-file <vault_file_name.pass>
+
 (Note : If you don't want to create any random password then while encrypting file, don't use --vault-password file syntax)
 
 ANSIBLE VAULT OPTIONS:
