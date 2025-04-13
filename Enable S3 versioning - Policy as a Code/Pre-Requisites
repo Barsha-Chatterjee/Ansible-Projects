@@ -1,6 +1,6 @@
 
 1. Ansible configured with AWS credentials (aws configure) - add the aws access and secret access key
 
-2. boto3 installed (pip install boto3)
+2. get python module boto3 installed to talk with AWS through API (pip install boto3)
 
-3. amazon.aws Ansible collection installed (ansible-galaxy collection install amazon.aws)
+3. amazon.aws Ansible collection should be installed (ansible-galaxy collection install amazon.aws)
